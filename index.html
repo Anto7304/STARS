@@ -4,23 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <h1>THE STARS</h1>
+    <h1 class="font-bold text-center text-6xl underline text-teal-600 ">THE STARS</h1>
     <nav>
         <ul>
             <li>
-                <a href="./peter.html">Peter</a>
+                <a href="./peter.html" class = "text-2xl text-blue-400  text-center m-4 hover:bg-blue-800 hover:underline hover:">Peter</a>
             </li>
         </ul>
     </nav>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dignissimos, ratione voluptatum officia dolor quaerat voluptatem consequuntur nihil ipsa laudantium consequatur incidunt quibusdam nisi maiores iste totam repellendus distinctio aliquid.
+    <div>
+        <h2 class="text-3xl font-bold ml-10 text-red-500">Purpose of the group</h2>
+        <ul class="m-4 ">
+            <li>To learn through peer learning</li>
+            <li>To go beyond class</li>
+            <li>To do practical things beside the theory</li>
+            <li>To help each other to grow in tech</li>
+            
+        </ul>
+        
+    </div>
+    
+    <h3 class="text-center font-bold text-3xl">PROBLEMS SOLVED</h3>
+    <div>
+        <h5 class="text-2xl text-green-600">1.Sum of two numbers using python-leetcode</h5>
+        <p class="bg-yellow-400">
+            nums = [2,7,11,15]
+            target = 9
+            
+            def twosum(nums,target):
+                seen={}
+                
 
-    </p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempora libero! Voluptatem quis ratione nam
-        accusamus libero possimus vitae aut!</p>
+                for key,value in enumerate(nums):
+
+                    ans=target - value
+                    
+                    if ans  in seen:
+                        return [seen[ans],key]
+
+                    seen[value]=key
+                
+                return []
+            
+
+
+            #twosum(nums,target)
+            print(twosum(nums,target))
+        </p>
+    </div>
+
+    <div>
+
+    </div>
+
+    
+    
 
 </body>
 

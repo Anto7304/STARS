@@ -38,6 +38,7 @@ def display_students():
             print(f"{i}. {name} {age} yrs) - {student["course"]}")
             for sub, marks in student["marks"].items()
             print(f"  {sub}: {marks}")
+
             
 
 
